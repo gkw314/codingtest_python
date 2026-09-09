@@ -1,0 +1,10 @@
+def solution(n):
+    answer = 0
+    fac = 1
+    for i in range(1, n+1):
+        fac = fac * i
+        if fac <= n:
+            answer = i
+        else:
+            break
+    return answer
